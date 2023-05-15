@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CM Private Rest House</title>
+    <link rel="icon" type="image/x-icon" href="CM-icon-v2.png">
+    <link rel="stylesheet" href="indexstyle.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="http://127.0.0.1:5500/php/CM%20Resort%20v3/index.html" class="brand">CM Private Rest House</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#accomodationpage">Accommodations</a>
+                <a href="#amenitiespage">Amenities</a>
+                <a href="#contactpage">Contact Us</a>
+                <a onclick="showPopup()">BOOK NOW!!</a>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-booking" class="popup-booking">
+        <div class="popup-booking-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Make A Reservation</h2>
+            <form action="insert.php" method="post" action="https://formsubmit.co/el/cizoxa" method="POST">
+                <input class="first-form box" type="text" name="firstname" placeholder="First Name" required
+                    maxlength="30"><br>
+                <input class="last-form box" type="text" name="lastname" placeholder="Last Name" required
+                    maxlength="30"><br>
+                <input class="middle-form box" type="text" name="middleinitial" placeholder="Middle Initial" required
+                    maxlength="30"><br>
+                <input class="email-form box" type="email" name="email" placeholder="Email" required maxlength="30"><br>
+                <input class="contact-form box" type="text" name="mobilenumber"
+                    placeholder="Contact Number (Number only)" required maxlength="11" inputmode="numeric"
+                    pattern="[0-9]*"><br>
+                <label for="checkinDate">Check-In Date:</label>
+                <input class="date-form box" type="date" name="reservationdate" placeholder="CheckIn Date" required><br>
+                <textarea class="note-form box" type="text" name="note" placeholder="Note"
+                    maxlength="300"></textarea><br>
+                <input class="submit-form box" type="submit" value="SUBMIT">
+            </form>
+        </div>
+    </div>
+    <section class="home">
+        <video class="video-slide active" src="introvid.mp4" autoplay muted loop></video>
+
+        <div class="content active">
+            <h1>CHILL & RELAX
+                <hr><br><span>Your Private Getaway</span>
+            </h1>
+            <p>Escape the hustle and bustle of the city and relax in our private rest house.</p>
+            <div class="hyperlink">
+                <a href="https://www.facebook.com/people/CM-Private-Rest-House/100083061945635/">Explore Us On
+                    Facebook</a>
+            </div>
+
+            <h1 id="accomodationpage">ACCOMMODATIONS
+                <hr><br><span>Villa 1 & 2</span>
+            </h1>
+            <ul>
+                <li>Adult and Kiddie Pool</li>
+                <br>
+                <li>Bedroom 1: Single Beds (additional mattresses available) w/ Bathroom</li>
+                <br>
+                <li>Bedroom 2: Single and Double Bunk Beds (additional mattresses available)</li>
+                <br>
+                <li>Kitchen with Fridge and Cooker</li>
+                <br>
+                <li>Dining Area</li>
+                <br>
+                <li>Entertainment Area (Indoor and Outdoor)</li>
+            </ul>
+            <div class="gallery-box">
+                <!-- Whole Gallery Box -->
+                <div class="gallery">
+                    <!-- Every Single Images -->
+                    <img src="img1-1.JPG">
+                    <img src="img1-2.JPG">
+                    <img src="img1-3.JPG">
+                    <img src="img1-4.JPG">
+                    <img src="img1-5.JPG">
+                    <img src="img1-6.JPG">
+                    <img src="img1-7.JPG">
+                    <img src="img1-8.JPG">
+
+                    <img src="img2-1.JPG">
+                    <img src="img2-2.JPG">
+                    <img src="img2-3.JPG">
+                    <img src="img2-4.JPG">
+                    <img src="img2-5.JPG">
+                    <img src="img2-6.JPG">
+                    <img src="img2-7.JPG">
+                    <img src="img2-8.JPG">
+                </div>
+            </div>
+
+
+            <h1 id="amenitiespage">AMENITIES
+                <hr>
+            </h1>
+            <ul>
+                <li>Secured and Private Location</li>
+                <br>
+                <li>Full Basketball Court</li>
+                <br>
+                <li>Garden Access</li>
+                <br>
+                <li>Spacious Parking Lot</li>
+                <br>
+                <li>Free Videoke</li>
+                <br>
+                <li>Free use up to 40 chairs and 4 long tables</li>
+                <br>
+                <li>Near to stores and main road</li>
+            </ul>
+
+            <h1 id="contactpage">CONTACT US
+                <hr>
+            </h1>
+
+        </div>
+    </section>
+
+    <div class="contactUs">
+        <div class="box">
+            <!-- Form -->
+            <div class="contact form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="formBox">
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>First Name</span>
+                                <input type="text" placeholder="James">
+                            </div>
+                            <div class="inputBox">
+                                <span>Last Name</span>
+                                <input type="text" placeholder="Sibug">
+                            </div>
+                        </div>
+
+                        <div class="row50">
+                            <div class="inputBox">
+                                <span>Email</span>
+                                <input type="email" placeholder="fake@email.com">
+                            </div>
+                            <div class="inputBox">
+                                <span>Mobile</span>
+                                <input type="number" placeholder="09123456789">
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <span>Message</span>
+                                <textarea placeholder="Write your message here..."></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row100">
+                            <div class="inputBox">
+                                <input type="submit" value="Send">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Info Box -->
+            <div class="contact info">
+                <h3>Contact Info</h3>
+                <div class="infoBox">
+                    <div>
+                        <span><ion-icon name="pin"></ion-icon></span>
+                        <p>184 Paralaya St. Barangay San Nicolas <br>Mexico, Pampanga</p>
+                    </div>
+                    <div>
+                        <span><ion-icon name="mail"></ion-icon></span>
+                        <a href="mailto:cmprivateresthouse@gmail.com">cmprivateresthouse@gmail.com</a>
+                    </div>
+                    <div>
+                        <span><ion-icon name="call"></ion-icon></span>
+                        <a href="tel:+63 917 178 3920">+63 917 178 3920</a>
+                    </div>
+                    <!-- Social Media Link -->
+                    <ul class="sci">
+                        <li><a href="https://www.facebook.com/people/CM-Private-Rest-House/100083061945635/"><ion-icon
+                                    name="logo-facebook"></ion-icon></a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <!-- Map -->
+            <div class="contact map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3852.5730010293587!2d120.7483163!3d15.071716100000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396fb88c2533efb%3A0xeb9ccdfce15f2a0d!2sCM%20Private%20Rest%20House!5e0!3m2!1sen!2sph!4v1683425747106!5m2!1sen!2sph"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Java Script -->
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Our shop is located at:</h3>
+                    <li>SEAOIL Filling Station, Lagundi Mexico <br>Pampanga (Beside SM Pampanga)</li>
+                    <li>WAZE/Google map👇 <br>
+                        AUTOSONIC CAR ACCESSORIES</li>
+                </div>
+                <div class="footer-col-2">
+                    <img src="Logo.png">
+                    <p>"Keeping The City Clean One Car At A Time."</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li><a href="https://www.ford.com.ph">Ford</a></li>
+                        <li><a href="https://www.ferrari.com/en-PH">Ferrari</a></li>
+                        <li><a href="https://www.nissan.ph">Nissan</a></li>
+                        <li><a href="https://toyota.com.ph">Toyota</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-facebook-f"></i> <a
+                                href="https://www.facebook.com/jaysonvelasco1986">Facebook</a></li>
+                        <li><i class="fa-brands fa-instagram"></i><a
+                                href="https://www.instagram.com/autosoniclipa/?fbclid=IwAR2domIpO8vLwOW4RTfeU0DuRZ3Yx73n_BFY8bMQ8QqYYtfbfVld_xJ9nGo">
+                                Instagram</a>
+                        </li>
+                        <li><i class="fa-brands fa-twitter"></i> Twitter</li>
+                        <li><i class="fa-brands fa-youtube"></i> Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Made with <i class="fa-regular fa-heart"></i> by Machi / All Rights Reserved</p>
+        </div>
+    </div>
+
+    <!----- JavaScript ----->
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showNavbar() {
+            navLinks.style.right = "0";
+        }
+
+        function hideNavbar() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+
+</body>
+
+
+
+</html>
