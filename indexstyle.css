@@ -575,7 +575,7 @@ ul {
 
 
 /* Responsive Design */
-@media (max-width: 1300px) {
+@media (orientation: landscape) and (max-width: 1300px) {
     body {
         background: #03a9f5;
     }
@@ -704,7 +704,7 @@ ul {
     }
 }
 
-@media (max-width: 1080px) {
+@media (orientation: portrait) and (max-width: 1080px) {
     .home .content h1 {
         font-size: 3em;
         line-height: 60px;
@@ -744,7 +744,7 @@ ul {
     }
 
 
-    @media (max-width: 730px) {
+    @media (orientation: portrait) and (max-width: 730px) {
         .home .content h1 {
             font-size: 3em;
             line-height: 60px;
