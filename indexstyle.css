@@ -704,7 +704,7 @@ ul {
     }
 }
 
-@media (orientation: portrait) and (max-width: 1080px) {
+@media (aspect-ratio: 20/9) {
     .home .content h1 {
         font-size: 3em;
         line-height: 60px;
@@ -744,7 +744,7 @@ ul {
     }
 
 
-    @media (orientation: portrait) and (max-width: 730px) {
+    @media (aspect-ratio: 19/9) {
         .home .content h1 {
             font-size: 3em;
             line-height: 60px;
